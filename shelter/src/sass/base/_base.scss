@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+
+    background-color: aqua;
+    @include media-tablet-and_down {
+        background-color: pink;
+    }
+    @include media-mobile-only {
+        background-color: greenyellow;
+    }
+}
+
+body {
+    @extend %font-primary;
+}
+
+h2 {
+    @extend %h2;
+}
+
+h3 {
+    @extend %h3;
+}

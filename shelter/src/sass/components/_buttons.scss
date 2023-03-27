@@ -1,0 +1,51 @@
+.button {
+    padding: 15px 45px;
+    @extend %font-primary;
+    @include font(1.7rem, normal, 400, 130%);
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    border-radius: 10rem;
+    cursor:pointer;
+    @extend %transition;
+    background: $color-primary;
+    border-width: 0px;
+    &:hover {
+        background: $color-primary-light;
+    }
+//     padding: ;
+//     font-family: ;
+
+//     &_primary {
+
+//     }
+    &_secondary {
+        padding: 13px 43px; //offsetting border-width
+        border-width: 2px;
+        background: none;
+        border-style: solid;
+        border-color: $color-primary;
+
+    }
+ }
+
+ .navigation-button {
+    width: 52px;
+    height: 52px;
+   border-radius: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $color-primary;
+    cursor:pointer;
+    color: $color-dark-3xl;
+    @extend %h4;
+    @extend %transition;
+    &:hover {
+        background-color: $color-primary;
+    }
+    // &_left-arrow {
+    //     //background-image: url("../assets/images/icons/arrow-left.svg");
+    // }
+    // &_right-arrow {
+    //     //background-image: url("../assets/images/icons/arrow-right.svg");
+    // }
+ }

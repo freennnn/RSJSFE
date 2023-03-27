@@ -1,0 +1,17 @@
+@import "base/normalize";
+
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+@import "base/base";
+@import "base/layouts";
+@import "base/fonts";
+
+@import "components/navigation";
+@import "components/header";
+@import "components/buttons";
+
+@import "sections/start.scss";
+@import "sections/about.scss";
+@import "sections/pets.scss";

@@ -1,0 +1,36 @@
+.about {
+    background-color: $color-light-xl;
+}
+.about-content {
+    display: flex;
+    padding: 80px 40px 100px 40px;
+    // background-color: yellowgreen;
+}
+
+.about-content__picture {
+    margin: 0 120px 0 175px;
+}
+
+.about-content__text-area {
+    margin: 14px 175px 14px 0;
+
+}
+
+.about-content__title {
+    margin: 0 60px 0 0;
+    color: $color-dark-l;
+}
+
+.about-content__paragraph-1 {
+    margin: 25px 0px;
+    color: $color-dark-xl;
+    @extend %paragraph-1;
+
+}
+
+.about-content__paragraph-2 {
+    margin: 0;
+    color: $color-dark-xl;
+    @extend %paragraph-1;
+
+}
