@@ -31,3 +31,9 @@
     @include font(2.0rem, normal, 400, 115%);
     letter-spacing: 0.06em;
 }
+
+%h5 {
+    @extend %font-primary;
+    @include font(1.5rem, normal, 400, 110%);
+    letter-spacing: 0.06em;
+}
