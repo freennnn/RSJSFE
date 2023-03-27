@@ -307,11 +307,11 @@ template {
   display: none;
 }
 
-.logo__sub-title, .start-content__subtitle, .navigation__link a {
+.logo__sub-title, .about-content__paragraph-2, .about-content__paragraph-1, .start-content__subtitle, .navigation__link a {
   font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
 }
 
-.button, .logo__title, body, .start-content__title {
+.button, .logo__title, body, .about-content__title, .start-content__title {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -319,7 +319,7 @@ template {
   transition: all 0.3s ease-out;
 }
 
-.start-content__subtitle, .navigation__link a {
+.about-content__paragraph-2, .about-content__paragraph-1, .start-content__subtitle, .navigation__link a {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
@@ -331,6 +331,14 @@ template {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+}
+
+.about-content__title {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
 }
 
 * {
@@ -559,6 +567,38 @@ h2 {
 .start-content__subtitle {
   margin: 0 0 42px 0;
   color: #CDCDCD;
+}
+
+.about {
+  background-color: #FFFFFF;
+}
+
+.about-content {
+  display: flex;
+  padding: 80px 40px 100px 40px;
+}
+
+.about-content__picture {
+  margin: 0 120px 0 175px;
+}
+
+.about-content__text-area {
+  margin: 14px 175px 14px 0;
+}
+
+.about-content__title {
+  margin: 0 60px 0 0;
+  color: #545454;
+}
+
+.about-content__paragraph-1 {
+  margin: 25px 0px;
+  color: #4C4C4C;
+}
+
+.about-content__paragraph-2 {
+  margin: 0;
+  color: #4C4C4C;
 }
 
 /*# sourceMappingURL=style.css.map */

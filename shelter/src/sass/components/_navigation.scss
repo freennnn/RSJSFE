@@ -11,7 +11,7 @@
     //     color: $color-primary-light;
     // }
     a {
-        @extend %paragraph-l;
+        @extend %paragraph-1;
         color: $color-dark-s;
         @extend %transition;
         text-decoration: none;
