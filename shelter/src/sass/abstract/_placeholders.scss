@@ -1,0 +1,33 @@
+%font-secondary {
+    font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
+}
+
+%font-primary {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+%transition {
+    transition: all .3s ease-out;
+}
+
+%paragraph-1 {
+    @extend %font-secondary;
+    @include font(1.5rem, normal, 400, 160%);
+}
+
+%h2 {
+    @extend %font-primary;
+    @include font(4.4rem, normal, 400, 130%);
+}
+
+%h3 {
+    @extend %font-primary;
+    @include font(3.5rem, normal, 400, 130%);
+    letter-spacing: 0.06em;
+}
+
+%h4 {
+    @extend %font-primary;
+    @include font(2.0rem, normal, 400, 115%);
+    letter-spacing: 0.06em;
+}
