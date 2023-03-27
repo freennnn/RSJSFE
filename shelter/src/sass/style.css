@@ -307,11 +307,11 @@ template {
   display: none;
 }
 
-.pure-header__sub-title, .start-content__subtitle, .navigation__link a {
+.logo__sub-title, .start-content__subtitle, .navigation__link a {
   font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
 }
 
-.button, .pure-header__title, body, .start-content__title {
+.button, .logo__title, body, .start-content__title {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -500,7 +500,7 @@ h2 {
   justify-content: space-between;
 }
 
-.pure-header__title {
+.logo__title {
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 400;
@@ -510,7 +510,7 @@ h2 {
   margin: 0;
 }
 
-.pure-header__sub-title {
+.logo__sub-title {
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
