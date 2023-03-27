@@ -20,8 +20,9 @@ body {
 }
 
 h2 {
-    @include font(4.4rem, normal, 400, 130%);
-    color: $color-light-xl;
-
+    @extend %h2;
 }
 
+h3 {
+    @extend %h3;
+}
