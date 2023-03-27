@@ -307,11 +307,11 @@ template {
   display: none;
 }
 
-.logo__sub-title, .about-content__paragraph-2, .about-content__paragraph-1, .start-content__subtitle, .navigation__link a {
+.donations-content__description, .logo__sub-title, .donations-content__subtitle, .about-content__paragraph-2, .about-content__paragraph-1, .start-content__subtitle, .navigation__link a {
   font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
 }
 
-.pet-card__title, .button, .logo__title, body, .navigation-button, h4, h3, h2 {
+.pet-card__title, .button, .logo__title, body, h5, .navigation-button, h4, h3, h2 {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -319,7 +319,7 @@ template {
   transition: all 0.3s ease-out;
 }
 
-.about-content__paragraph-2, .about-content__paragraph-1, .start-content__subtitle, .navigation__link a {
+.donations-content__subtitle, .about-content__paragraph-2, .about-content__paragraph-1, .start-content__subtitle, .navigation__link a {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
@@ -346,6 +346,14 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
   letter-spacing: 0.06em;
 }
 
@@ -379,6 +387,11 @@ h3 {
 }
 
 h4 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+h5 {
   margin-block-end: 0;
   margin-block-start: 0;
 }
@@ -748,6 +761,64 @@ h4 {
 }
 .help-icon_sleeping {
   background-image: url("../assets/images/icons/help/icon-sleeping-area.svg");
+}
+
+.donations {
+  background-color: #F6F6F6;
+}
+
+.donations-content {
+  margin: 0px 182px 0px 183px;
+  padding: 80px 0 100px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.donations-content__text-area {
+  margin: 0 0 0 30px;
+}
+
+.donations-content__title {
+  margin: 0 80px 20px 0;
+  color: #545454;
+}
+
+.donations-content__subtitle {
+  margin: 0 0 42px 0;
+  color: #CDCDCD;
+}
+
+.donations-content__card-promt {
+  color: #545454;
+}
+
+.donations-content__description {
+  margin: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #B2B2B2;
+}
+
+.credit-card-line {
+  margin: 20px 0;
+  display: flex;
+  border-radius: 9px;
+  background-color: #F1CDB3;
+  align-items: center;
+}
+
+.credit-card-line__icon {
+  margin: 10px 15px;
+  display: block;
+  width: 30px;
+  height: 23px;
+  background: url("../assets/images/donations/credit-card.svg");
+}
+
+.credit-card-line__number {
+  color: #545454;
 }
 
 /*# sourceMappingURL=style.css.map */
