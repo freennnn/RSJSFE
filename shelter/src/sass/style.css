@@ -311,7 +311,7 @@ template {
   font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif;
 }
 
-.pet-card__title, .button, .logo__title, body, .navigation-button, h3, h2 {
+.pet-card__title, .button, .logo__title, body, .navigation-button, h4, h3, h2 {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -341,7 +341,7 @@ h3 {
   letter-spacing: 0.06em;
 }
 
-.navigation-button {
+.navigation-button, h4 {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -366,6 +366,21 @@ html {
   html {
     background-color: greenyellow;
   }
+}
+
+h2 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+h3 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+h4 {
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .content-wrapper {
@@ -663,6 +678,76 @@ html {
 .pet-card__more-button {
   text-align: center;
   margin: 0 0 30px 0;
+}
+
+.help {
+  background-color: #FFFFFF;
+}
+
+.help-content {
+  padding: 80px 40px 100px 40px;
+}
+.help-content__title {
+  margin: 0;
+  text-align: center;
+  color: #545454;
+}
+.help-content__help-list {
+  padding: 60px 87px 0px 87px;
+}
+
+.help-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 119px;
+  row-gap: 55px;
+  justify-content: center;
+}
+
+.help-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.help-list__item__title {
+  text-align: center;
+  margin: 30px 0 0 0;
+  color: #545454;
+}
+
+.help-icon {
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+.help-icon_pet-food {
+  background-image: url("../assets/images/icons/help/icon-pet-food.svg");
+}
+.help-icon_transportation {
+  background-image: url("../assets/images/icons/help/icon-transportation.svg");
+}
+.help-icon_toys {
+  background-image: url("../assets/images/icons/help/icon-toys.svg");
+}
+.help-icon_bowls {
+  background-image: url("../assets/images/icons/help/icon-bowls-and-cups.svg");
+}
+.help-icon_shampoos {
+  background-image: url("../assets/images/icons/help/icon-shampoos.svg");
+}
+.help-icon_vitamins {
+  background-image: url("../assets/images/icons/help/icon-vitamins.svg");
+}
+.help-icon_medicines {
+  background-image: url("../assets/images/icons/help/icon-medicines.svg");
+}
+.help-icon_collars {
+  background-image: url("../assets/images/icons/help/icon-collars-leashes.svg");
+}
+.help-icon_sleeping {
+  background-image: url("../assets/images/icons/help/icon-sleeping-area.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

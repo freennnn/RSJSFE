@@ -1,0 +1,73 @@
+.help {
+    background-color: $color-light-xl;
+}
+.help-content {
+    padding: 80px 40px 100px 40px;
+    // background-color: yellowgreen;
+
+    &__title {
+        margin: 0;
+        text-align: center;
+        //@extend %h3;
+        color: $color-dark-l;
+    }
+    &__help-list {
+        padding: 60px 87px 0px 87px;
+    }
+}
+
+.help-list {
+    //background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 119px;
+    row-gap: 55px;
+    justify-content: center;
+}
+
+.help-list__item {
+    display: flex;
+    flex-direction: column;
+    //background-color: greenyellow;
+}
+
+.help-list__item__title {
+    text-align: center;
+    margin: 30px 0 0 0;
+    color: $color-dark-l;
+}
+
+.help-icon {
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+    width: 60px ;
+    height: 60px;
+    &_pet-food {
+        background-image: url("../assets/images/icons/help/icon-pet-food.svg");
+    }
+    &_transportation {
+        background-image: url("../assets/images/icons/help/icon-transportation.svg");
+    }
+    &_toys {
+        background-image: url("../assets/images/icons/help/icon-toys.svg");
+    }
+    &_bowls {
+        background-image: url("../assets/images/icons/help/icon-bowls-and-cups.svg");
+    }
+    &_shampoos {
+        background-image: url("../assets/images/icons/help/icon-shampoos.svg");
+    }
+    &_vitamins{
+        background-image: url("../assets/images/icons/help/icon-vitamins.svg");
+    }
+    &_medicines {
+        background-image: url("../assets/images/icons/help/icon-medicines.svg");
+    }
+    &_collars {
+        background-image: url("../assets/images/icons/help/icon-collars-leashes.svg");
+    }
+    &_sleeping {
+        background-image: url("../assets/images/icons/help/icon-sleeping-area.svg");
+    }
+}
