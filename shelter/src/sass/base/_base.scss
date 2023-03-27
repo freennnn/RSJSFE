@@ -1,3 +1,27 @@
-h1 {
-    color: green;
+* {
+    box-sizing: border-box;
 }
+
+html {
+    font-size: 10px;
+
+
+    background-color: aqua;
+    @include media-tablet-and_down {
+        background-color: pink;
+    }
+    @include media-mobile-only {
+        background-color: greenyellow;
+    }
+}
+
+body {
+    @extend %font-primary;
+}
+
+h2 {
+    @include font(4.4rem, normal, 400, 130%);
+    color: $color-light-xl;
+
+}
+

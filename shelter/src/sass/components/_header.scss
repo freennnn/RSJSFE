@@ -1,0 +1,27 @@
+.pure-header {
+    padding: 30px 40px 90px 40px;
+    //background-color: blueviolet;
+    background-clip: content-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pure-header__logo {
+
+}
+
+.pure-header__title {
+    @extend %font-primary;
+    @include font(3.2rem, normal, 400, 110%);
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    margin: 0;
+}
+
+.pure-header__sub-title {
+    @extend %font-secondary;
+    @include font(1.3rem, normal, 400, 1.5rem);
+    color: $color-light-xl;
+    margin: 10px 0 0 4px;
+    letter-spacing: 0.1em;
+}

@@ -4,15 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shelter</title>
     <link rel="stylesheet" href="src/sass/style.css">
 </head>
 <body>
-    <head class="header">
-        <div class="header__wrapper">
-            <h1>Shelter here to be!</h1>
+    <header class="start">
+        <div class="content-wrapper start__wrapper">
+            <!-- Semantic requirement to have h1 -->
+            <h1 style="display: none">Shelter here to be!</h1>
+            <div class="pure-header">
+                <div class="pure-header__logo">
+                    <!-- <a href="#" class="logo">
+                        <object type="image/svg+xml" data="./src/img/logo.svg" class="logo-object">
+                            Your browser does not support SVG
+                         </object>
+                    </a> -->
+                    <p class="pure-header__title">Cozy House</p>
+                    <p class="pure-header__sub-title">Shelter for pets in Boston</p>
+                </div>
+                <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+                <nav class="pure-header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__link"><a href="#start" class="clicked">About the shelter</a></li>
+                        <li class="navigation__link"><a href="#pets">Our pets</a></li>
+                        <li class="navigation__link"><a href="#help">Help the shelter</a></li>
+                        <li class="navigation__link"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="start-content">
+                <div class="start-content__text-area">
+                    <h2 class="start-content__title">Not only people need a house</h1>
+                    <p class="start-content__subtitle">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                    <button class="button button_primary">Make a friend</button>
+                </div>
+                <img src="src/assets/images/start/start-screen-puppy.png" alt="Start puppy image">
+            </div>
+           
+
+
+
+            
         </div>
-    </head>
+
+
+    </header>
+    <main>
+        <section class="pets" id="pets">
+            <div>
+                <h3>Pets</h3>
+            </div>
+        </section>
+        <section class="help" id="help">
+            <div>
+                <h3>Help</h3>
+            </div>
+        </section>
+        <section class="contacts" id = "contacts">
+            <div>
+                <h3>Contacts</h3>
+            </div>
+        </section>
+    </main>
     <footer>
 
     </footer>

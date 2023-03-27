@@ -1,5 +1,16 @@
-@use "base/normalize";
-@use "base/base";
+@import "base/normalize";
 
-@use "abstract/constants";
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+@import "base/base";
+@import "base/layouts";
+@import "base/fonts";
+
+@import "components/navigation";
+@import "components/header";
+@import "components/buttons";
+
+@import "sections/start.scss";
 

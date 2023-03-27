@@ -1,0 +1,24 @@
+.button {
+    padding: 15px 45px;
+    @extend %font-primary;
+    @include font(1.7rem, normal, 400, 130%);
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    border-radius: 10rem;
+    cursor:pointer;
+    @extend %transition;
+    background: $color-primary;
+    border-width: 0px;
+    &:hover {
+        background: $color-primary-light;
+    }
+//     padding: ;
+//     font-family: ;
+
+//     &_primary {
+
+//     }
+//     &_secondary {
+
+//     }
+ }

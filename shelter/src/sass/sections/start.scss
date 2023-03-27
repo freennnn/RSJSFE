@@ -1,0 +1,29 @@
+.start {
+    background: url("../assets/images/shared/background_noise_transparent@2X.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    //background: url("././assets/images/shared/background_noise_transparent@2X.png");
+    //background: url("../assets/images/start/start-screen-puppy.png");
+    //src/assets/images/start/start-screen-puppy.png
+}
+
+.start-content {
+    padding: 0 40px;
+   // background-color: coral;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+.start-content__text-area {
+    margin: 163px 42px 0 0;
+}
+
+.start-content__title {
+    margin: 0 150px 42px 0;
+    @extend %h2;
+}
+
+.start-content__subtitle {
+    margin: 0 0 42px 0;
+    @extend %paragraph-l;
+    color: $color-dark-s;
+}
