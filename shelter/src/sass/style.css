@@ -774,6 +774,11 @@ h5 {
   flex-wrap: nowrap;
 }
 
+.donations-content__pet-image {
+  object-fit: scale-down;
+  width: 100%;
+}
+
 .donations-content__text-area {
   margin: 0 0 0 30px;
 }
@@ -802,7 +807,7 @@ h5 {
 }
 
 .credit-card-line {
-  margin: 20px 0;
+  margin: 20px 31px 20px 0;
   display: flex;
   border-radius: 9px;
   background-color: #F1CDB3;

@@ -5,10 +5,13 @@
 .donations-content {
     margin: 0px 182px 0px 183px;
     padding: 80px 0 100px 0px;
-    //background-color: coral;
     display: flex;
     flex-wrap: nowrap;
-    //ustify-content: end;
+}
+
+.donations-content__pet-image {
+    object-fit: scale-down;
+    width: 100%; 
 }
 
 .donations-content__text-area {
@@ -38,7 +41,7 @@
 }
 
 .credit-card-line {
-    margin: 20px 0;
+    margin: 20px 31px 20px 0;
     display: flex;
     border-radius: 9px;
     background-color: $color-primary;
