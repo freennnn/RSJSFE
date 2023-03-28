@@ -902,4 +902,40 @@ h5 {
   color: #F1CDB3;
 }
 
+.pets-page-start {
+  background-color: #FFFFFF;
+}
+
+.logo__title_light {
+  color: #545454;
+}
+
+.logo__sub-title_light {
+  color: #292929;
+}
+
+.pure-header_light {
+  padding: 30px 40px 30px 40px;
+}
+
+.navigation__link_light a {
+  color: #545454;
+}
+.navigation__link_light a:hover {
+  color: #292929;
+}
+.navigation__link_light a:active {
+  border-color: #F1CDB3;
+  color: #292929;
+}
+.navigation__link_light a.clicked {
+  border-color: #F1CDB3;
+  color: #292929;
+}
+
+.zaglushka {
+  margin: 200px auto 200px auto;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

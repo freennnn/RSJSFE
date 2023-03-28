@@ -1,0 +1,41 @@
+.pets-page-start {
+    background-color: $color-light-xl;
+}
+
+.logo__title_light {
+    color: $color-dark-l;
+}
+
+.logo__sub-title_light {
+    color: $color-dark-3xl;
+}
+
+.pure-header_light {
+    padding: 30px 40px 30px 40px;
+}
+
+.navigation__link_light {
+    a {
+        color: $color-dark-l;
+        &:hover {
+            color: $color-dark-3xl;
+        }
+        &:active {
+            border-color: $color-primary;
+            color: $color-dark-3xl;
+        }
+        
+        &.clicked {
+            border-color: $color-primary;
+            color: $color-dark-3xl;
+        }
+    }
+    
+
+
+}
+
+.zaglushka {
+    margin: 200px auto 200px auto;
+    text-align: center;
+}
