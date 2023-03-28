@@ -45,9 +45,11 @@
     &_disabled {
         border-color: $color-dark-s;
         color: $color-dark-s;
+        cursor: default;
     }
     &_selected {
         background-color: $color-primary;
+        cursor: default;
     }
 
     // &_left-arrow {

@@ -586,9 +586,11 @@ h5 {
 .navigation-button_disabled {
   border-color: #CDCDCD;
   color: #CDCDCD;
+  cursor: default;
 }
 .navigation-button_selected {
   background-color: #F1CDB3;
+  cursor: default;
 }
 
 .start {
