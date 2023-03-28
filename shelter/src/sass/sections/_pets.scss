@@ -39,6 +39,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
+
     &:hover {
         border-color: $color-primary-light;
         //border-width: 1px;
@@ -52,6 +53,14 @@
         letter-spacing: 0.06em;
         color: $color-dark-l;
     }
+    &__photo {
+        max-width: 270px;
+        object-fit: cover;
+        height: 100%;
+        width: 270px;
+        height: 270px;
+    }
+
     &__more-button {
         text-align: center;
         margin: 0 0 30px 0;

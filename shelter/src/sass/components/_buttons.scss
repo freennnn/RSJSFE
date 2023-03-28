@@ -39,9 +39,17 @@
     color: $color-dark-3xl;
     @extend %h4;
     @extend %transition;
-    &:hover {
+    &:not(.navigation-button_selected):not(.navigation-button_disabled):hover {
         background-color: $color-primary;
     }
+    &_disabled {
+        border-color: $color-dark-s;
+        color: $color-dark-s;
+    }
+    &_selected {
+        background-color: $color-primary;
+    }
+
     // &_left-arrow {
     //     //background-image: url("../assets/images/icons/arrow-left.svg");
     // }

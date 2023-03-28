@@ -29,6 +29,7 @@
         &.clicked {
             border-color: $color-primary;
             color: $color-light-s;
+            cursor: default;
         }
     }
     
