@@ -6,12 +6,12 @@ html {
     font-size: 10px;
 
 
-    background-color: aqua;
+    // background-color: aqua;
     @include media-tablet-and_down {
-        background-color: pink;
+        // background-color: pink;
     }
     @include media-mobile-only {
-        background-color: greenyellow;
+        // background-color: greenyellow;
     }
 }
 

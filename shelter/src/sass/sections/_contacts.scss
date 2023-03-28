@@ -1,0 +1,89 @@
+.contacts {
+    background: url(../assets/images/shared/background_noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.contacts-content {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    column-gap: 158px;
+    flex-wrap: nowrap;
+}
+
+.digital_address {
+    &__title {
+        color: $color-light-xl;
+        margin: 16px 0 40px 0;
+    }
+    &__email-row {
+        display: flex;
+        align-items: center;
+        &__icon {
+            display: inline-block;
+            width: 40px;
+            height: 32px;
+            background-image: url("../assets/images/contacts/icon-email.svg");
+            margin: 0 20px 0 0;
+        }
+    
+        &__email {
+            color: $color-primary;
+        }
+    }
+
+    &__phone-row {
+        margin: 40px 0 0 0;
+        display: flex;
+        align-items: center;
+        &__icon {
+            display: inline-block;
+            width: 40px;
+            height: 32px;
+            background-image: url("../assets/images/contacts/icon-phone.svg");
+            margin: 0 20px 0 0; 
+        }
+
+        &__phone {
+            color: $color-primary;
+        }
+    }
+}
+
+.physical_address {
+    &__title {
+        color: $color-light-xl;
+        margin: 16px 31px 34px 0;
+    }
+    &__address-1-row {
+        display: flex;
+        align-items: center;
+        &__icon {
+            display: inline-block;
+            min-width: 22px;
+            width: 22px;
+            height: 32px;
+            background-image: url("../assets/images/contacts/icon-marker.svg");
+            margin: 0 20px 0 0;
+        }
+    
+        &__address {
+            color: $color-primary;
+        }
+    }
+
+    &__address-2-row {
+        margin: 37px 0 0 0;
+        display: flex;
+        align-items: center;
+        &__icon {
+            display: inline-block;
+            width: 22px;
+            height: 32px;
+            background-image: url("../assets/images/contacts/icon-marker.svg");
+            margin: 0 20px 0 0; 
+        }
+
+        &__address {
+            color: $color-primary;
+        }
+    }
+}

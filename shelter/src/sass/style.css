@@ -363,19 +363,7 @@ h5 {
 
 html {
   font-size: 10px;
-  background-color: aqua;
 }
-@media (max-width: 1199.9px) {
-  html {
-    background-color: pink;
-  }
-}
-@media (max-width: 599.9px) {
-  html {
-    background-color: greenyellow;
-  }
-}
-
 h2 {
   margin-block-end: 0;
   margin-block-start: 0;
@@ -824,6 +812,86 @@ h5 {
 
 .credit-card-line__number {
   color: #545454;
+}
+
+.contacts {
+  background: url(../assets/images/shared/background_noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.contacts-content {
+  padding: 40px 40px 0 40px;
+  display: flex;
+  column-gap: 158px;
+  flex-wrap: nowrap;
+}
+
+.digital_address__title {
+  color: #FFFFFF;
+  margin: 16px 0 40px 0;
+}
+.digital_address__email-row {
+  display: flex;
+  align-items: center;
+}
+.digital_address__email-row__icon {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  background-image: url("../assets/images/contacts/icon-email.svg");
+  margin: 0 20px 0 0;
+}
+.digital_address__email-row__email {
+  color: #F1CDB3;
+}
+.digital_address__phone-row {
+  margin: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+.digital_address__phone-row__icon {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  background-image: url("../assets/images/contacts/icon-phone.svg");
+  margin: 0 20px 0 0;
+}
+.digital_address__phone-row__phone {
+  color: #F1CDB3;
+}
+
+.physical_address__title {
+  color: #FFFFFF;
+  margin: 16px 31px 34px 0;
+}
+.physical_address__address-1-row {
+  display: flex;
+  align-items: center;
+}
+.physical_address__address-1-row__icon {
+  display: inline-block;
+  min-width: 22px;
+  width: 22px;
+  height: 32px;
+  background-image: url("../assets/images/contacts/icon-marker.svg");
+  margin: 0 20px 0 0;
+}
+.physical_address__address-1-row__address {
+  color: #F1CDB3;
+}
+.physical_address__address-2-row {
+  margin: 37px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+.physical_address__address-2-row__icon {
+  display: inline-block;
+  width: 22px;
+  height: 32px;
+  background-image: url("../assets/images/contacts/icon-marker.svg");
+  margin: 0 20px 0 0;
+}
+.physical_address__address-2-row__address {
+  color: #F1CDB3;
 }
 
 /*# sourceMappingURL=style.css.map */
