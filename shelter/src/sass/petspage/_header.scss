@@ -54,3 +54,9 @@
     justify-content: center;
 
 }
+
+.logo_petspage:hover {
+    @extend %transition;
+    box-shadow: 2px 2px 5px lightgray;
+    //transform: scale(1.015, 1.015);
+}

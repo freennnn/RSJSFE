@@ -315,7 +315,7 @@ template {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-.pet-card, .navigation-button, .button, .navigation__link a {
+.logo_petspage:hover, .pet-card, .navigation-button, .button, .navigation__link a {
   transition: all 0.3s ease-out;
 }
 
@@ -524,6 +524,10 @@ h5 {
   background-clip: content-box;
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .logo__title {
@@ -857,6 +861,7 @@ h5 {
 .digital_address__email-row {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .digital_address__email-row__icon {
   display: inline-block;
@@ -872,6 +877,7 @@ h5 {
   margin: 40px 0 0 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .digital_address__phone-row__icon {
   display: inline-block;
@@ -891,6 +897,7 @@ h5 {
 .physical_address__address-1-row {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .physical_address__address-1-row__icon {
   display: inline-block;
@@ -907,6 +914,7 @@ h5 {
   margin: 37px 0 0 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .physical_address__address-2-row__icon {
   display: inline-block;
@@ -965,6 +973,10 @@ h5 {
   column-gap: 20px;
   margin: 45px auto 0px auto;
   justify-content: center;
+}
+
+.logo_petspage:hover {
+  box-shadow: 2px 2px 5px lightgray;
 }
 
 /*# sourceMappingURL=style.css.map */

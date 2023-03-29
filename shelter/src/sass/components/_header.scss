@@ -10,6 +10,10 @@
 
 // }
 
+.logo {
+    cursor: pointer;
+}
+
 .logo__title {
     @extend %font-primary;
     @include font(3.2rem, normal, 400, 110%);
