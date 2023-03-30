@@ -9,28 +9,44 @@
     // overflow: hidden;
 
     &__title {
-        margin: 0 400px 60px 400px;
+        margin: 0 400px 58px 400px;
         text-align: center;
         color: $color-dark-l;
     }
 
     &__to-pets-button {
-        margin: 60px 0 0 0;
+        margin: 58px 0 0 0;
         text-align: center;
+    }
+}
+
+.pets-gallery-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left-nav-item {
+        margin: 0 53px 0 0;
+    }
+    &__right-nav-item {
+        margin: 0 0 0 53px;
     }
 }
 
 
 .pets-gallery {
+    flex-grow:1;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    //column-gap: 90px;
     // position: relative;
     // left: -24px;
 
     
 }
+
+
 
 .pet-card {
     cursor:pointer;
