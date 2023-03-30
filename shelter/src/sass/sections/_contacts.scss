@@ -1,3 +1,5 @@
+$hover-border-width: 1px;
+
 .contacts {
     background: url(../assets/images/shared/background_noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
@@ -5,19 +7,24 @@
 .contacts-content {
     padding: 40px 40px 0 40px;
     display: flex;
-    column-gap: 158px;
+    justify-content: space-between;
+    //column-gap: 158px;
     flex-wrap: nowrap;
 }
 
-.digital_address {
+.digital-address {
+    max-width: 280px;
     &__title {
         color: $color-light-xl;
-        margin: 16px 0 40px 0;
+        margin: 16px 0 38px 0;
     }
     &__email-row {
         display: flex;
         align-items: center;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
         cursor:pointer;
+        @extend %transition;
         &__icon {
             display: inline-block;
             width: 40px;
@@ -29,13 +36,21 @@
         &__email {
             color: $color-primary;
         }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
+        }
     }
 
     &__phone-row {
-        margin: 40px 0 0 0;
+        margin: 38px 0 0 0;
         display: flex;
         align-items: center;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
         cursor:pointer;
+        @extend %transition;
+
         &__icon {
             display: inline-block;
             width: 40px;
@@ -47,18 +62,26 @@
         &__phone {
             color: $color-primary;
         }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
+        }
     }
 }
 
-.physical_address {
+.physical-address {
+    max-width: 304px;
     &__title {
         color: $color-light-xl;
-        margin: 16px 31px 34px 0;
+        margin: 16px 31px 32px 0;
     }
     &__address-1-row {
         display: flex;
         align-items: center;
         cursor: pointer;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
+        @extend %transition;
         &__icon {
             display: inline-block;
             min-width: 22px;
@@ -71,13 +94,21 @@
         &__address {
             color: $color-primary;
         }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
+        }
     }
 
     &__address-2-row {
-        margin: 37px 0 0 0;
+        @extend %transition;
+        margin: 31px 0 0 0;
         display: flex;
         align-items: center;
         cursor:pointer;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
+
         &__icon {
             display: inline-block;
             width: 22px;
@@ -89,5 +120,15 @@
         &__address {
             color: $color-primary;
         }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
+            &> * {
+                //transform: scale(1.025, 1.025);
+            }
+        }
+
+        
+
     }
 }

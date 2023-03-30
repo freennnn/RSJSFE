@@ -55,11 +55,14 @@
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
+    border-radius: 9px;
+    overflow: hidden;
 
     &:hover {
         border-color: $color-primary-light;
-        //border-width: 1px;
-        //background-color: $color-primary-light;
+        .button {
+            background: $color-primary-light;
+        }
     }
     &__title {
         margin: 26px 0 30px 0;
