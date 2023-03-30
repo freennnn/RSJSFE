@@ -315,7 +315,7 @@ template {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-.logo_pets-page:hover, .physical-address__address-2-row, .physical-address__address-1-row, .digital-address__phone-row, .digital-address__email-row, .pet-card, .navigation-button, .button, .navigation__link a {
+.logo_pets-page:hover, .physical-address__address-2-row, .physical-address__address-1-row, .digital-address__phone-row, .digital-address__email-row, .credit-card-line, .pet-card, .navigation-button, .button, .navigation__link a {
   transition: all 0.3s ease-out;
 }
 
@@ -847,6 +847,10 @@ h5 {
   border-radius: 9px;
   background-color: #F1CDB3;
   align-items: center;
+  border: 1px solid transparent;
+}
+.credit-card-line:hover {
+  box-shadow: 2px 2px 5px lightgray;
 }
 
 .credit-card-line__icon {

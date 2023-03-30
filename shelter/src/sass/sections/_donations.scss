@@ -46,6 +46,14 @@
     border-radius: 9px;
     background-color: $color-primary;
     align-items: center;
+    border: 1px solid transparent;
+    @extend %transition;
+    &:hover {
+        //border-color: blue;
+        box-shadow: 2px 2px 5px lightgray;
+        //border-color: $color-primary-light-transparent;
+    }
+
 }
 
 .credit-card-line__icon {
