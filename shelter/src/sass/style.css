@@ -848,6 +848,7 @@ h5 {
   background-color: #F1CDB3;
   align-items: center;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 .credit-card-line:hover {
   box-shadow: 2px 2px 5px lightgray;
