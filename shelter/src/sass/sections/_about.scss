@@ -3,26 +3,53 @@
 }
 .about-content {
     display: flex;
+    align-items: center;
     padding: 80px 40px 100px 40px;
+    @include media-tablet-and-down {
+        flex-direction: column;
+        padding: 80px 165px 100px 165px;
+    }
+    @include media-mobile-only {
+        padding: 42px 10px;
+    }
     // background-color: yellowgreen;
 }
 
 .about-content__picture {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     margin: 0 120px 0 175px;
+    @include media-tablet-and_down {
+        order: 2;
+        margin: 0;
+    }
 }
 
 .about-content__text-area {
     margin: 14px 175px 14px 0;
+    @include media-tablet-and_down {
+        margin: 0 3px 80px 4px;
+    }
 
 }
 
 .about-content__title {
     margin: 0 60px 0 0;
     color: $color-dark-l;
+    @include media-mobile-only {
+        text-align: center;
+    }
 }
 
 .about-content__paragraph-1 {
     margin: 25px 0px;
+
+    @include media-mobile-only {
+        margin: 25px 0px 22px 0;
+    }
+
     color: $color-dark-xl;
     @extend %paragraph-1;
 
