@@ -1,17 +1,30 @@
 .pure-header {
     padding: 30px 40px 90px 40px;
+    @include media-tablet-and-down {
+        padding: 30px 30px 60px 30px;
+    }
+    @include media-mobile-only {
+        padding: 20px 30px 60px 20px;
+    }
     //background-color: blueviolet;
     background-clip: content-box;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    &__navigation {
+        @include media-mobile-only {
+            display: none;
+        }
+        max-width: 443px;
+        width: 100%;
+        margin: 0 0 0 20px;
+    }
 }
-
-// .pure-header__logo {
-
-// }
 
 .logo {
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .logo__title {

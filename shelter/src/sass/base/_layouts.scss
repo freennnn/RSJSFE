@@ -4,9 +4,9 @@
     max-width: 1280px;
     margin: 0 auto;
     @include media-tablet-and-down {
-        padding: 0 47px;;
+        //padding: 0 47px;;
     }
     @include media-mobile-only {
-        padding: 0 21px;
+        //padding: 0 21px;
     }
 }

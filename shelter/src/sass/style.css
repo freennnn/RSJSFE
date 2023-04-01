@@ -509,10 +509,10 @@ h5 {
   color: #FAFAFA;
 }
 .navigation__link a:active {
-  color: #FAFAFA;
   text-decoration: underline;
   text-decoration-color: #F1CDB3;
   text-decoration-thickness: 3px;
+  color: #FAFAFA;
 }
 .navigation__link a.clicked {
   text-decoration: underline;
