@@ -397,6 +397,15 @@ h4 {
   margin-block-end: 0;
   margin-block-start: 0;
 }
+@media (max-width: 650.9px) {
+  h4 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+  }
+}
 
 h5 {
   margin-block-end: 0;
@@ -977,6 +986,16 @@ h5 {
 .help-content {
   padding: 79px 40px 100px 40px;
 }
+@media (max-width: 1099.9px) {
+  .help-content {
+    padding: 79px 69px 100px 69px;
+  }
+}
+@media (max-width: 650.9px) {
+  .help-content {
+    padding: 42px 15px;
+  }
+}
 .help-content__title {
   margin: 0;
   text-align: center;
@@ -985,6 +1004,16 @@ h5 {
 .help-content__help-list {
   padding: 60px 87px 0px 87px;
 }
+@media (max-width: 1099.9px) {
+  .help-content__help-list {
+    padding: 60px 0 0 0;
+  }
+}
+@media (max-width: 650.9px) {
+  .help-content__help-list {
+    padding: 42px 0 0 0;
+  }
+}
 
 .help-list {
   display: flex;
@@ -992,6 +1021,23 @@ h5 {
   column-gap: 119px;
   row-gap: 55px;
   justify-content: center;
+}
+@media (max-width: 1099.9px) {
+  .help-list {
+    column-gap: normal;
+    justify-content: space-between;
+  }
+  .help-list > * {
+    flex-basis: 28%;
+  }
+}
+@media (max-width: 650.9px) {
+  .help-list {
+    row-gap: 30px;
+  }
+  .help-list > * {
+    flex-basis: 48%;
+  }
 }
 
 .help-list__item {
@@ -1004,6 +1050,11 @@ h5 {
   margin: 30px 0 0 0;
   color: #545454;
 }
+@media (max-width: 650.9px) {
+  .help-list__item__title {
+    margin: 20px 0 0 0;
+  }
+}
 
 .help-icon {
   display: inline-block;
@@ -1011,6 +1062,13 @@ h5 {
   cursor: pointer;
   width: 60px;
   height: 60px;
+}
+@media (max-width: 650.9px) {
+  .help-icon {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
 }
 .help-icon_pet-food {
   background-image: url("../assets/images/icons/help/icon-pet-food.svg");

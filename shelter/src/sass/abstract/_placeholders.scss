@@ -42,6 +42,13 @@
     letter-spacing: 0.06em;
 }
 
+// mixin added to be able to use in @media queries (where placedolders don't work)
+@mixin h5 {
+    @extend %font-primary;
+    @include font(1.5rem, normal, 400, 110%);
+    letter-spacing: 0.06em;
+}
+
 %h5 {
     @extend %font-primary;
     @include font(1.5rem, normal, 400, 110%);
