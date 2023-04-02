@@ -20,6 +20,7 @@ $gallery-block-breakpoint-mobile-width: 750px;
         max-width: 400px;
         margin: 0 auto 58px auto;
         @include media-tablet-and-down {
+            margin: 0 auto 40px auto;
         }
         text-align: center;
         color: $color-dark-l;
@@ -148,6 +149,6 @@ $gallery-block-breakpoint-mobile-width: 750px;
 
     &__more-button {
         text-align: center;
-        margin: 0 0 30px 0;
+        margin: 0 0 28px 0;
     }
 }

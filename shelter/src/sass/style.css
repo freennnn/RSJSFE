@@ -853,6 +853,11 @@ h5 {
   text-align: center;
   color: #545454;
 }
+@media (max-width: 1099.9px) {
+  .pets-content__title {
+    margin: 0 auto 40px auto;
+  }
+}
 .pets-content__to-pets-button {
   margin: 58px 0 0 0;
   text-align: center;
@@ -976,7 +981,7 @@ h5 {
 }
 .pet-card__more-button {
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 
 .help {
