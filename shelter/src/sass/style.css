@@ -383,6 +383,15 @@ h3 {
   margin-block-end: 0;
   margin-block-start: 0;
 }
+@media (max-width: 650.9px) {
+  h3 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+}
 
 h4 {
   margin-block-end: 0;
@@ -796,7 +805,7 @@ h5 {
 }
 
 .about-content__paragraph-1 {
-  margin: 25px 0px;
+  margin: 24px 0px;
   color: #4C4C4C;
 }
 @media (max-width: 650.9px) {
@@ -818,8 +827,20 @@ h5 {
   margin: 0 40px;
   padding: 80px 0px 100px 0px;
 }
+@media (max-width: 1099.9px) {
+  .pets-content {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 650.9px) {
+  .pets-content {
+    margin: 0 10px;
+    padding: 42px 0px 42px 0px;
+  }
+}
 .pets-content__title {
-  margin: 0 400px 58px 400px;
+  max-width: 400px;
+  margin: 0 auto 58px auto;
   text-align: center;
   color: #545454;
 }
@@ -827,17 +848,50 @@ h5 {
   margin: 58px 0 0 0;
   text-align: center;
 }
+@media (max-width: 750px) {
+  .pets-content__to-pets-button {
+    margin: 42px 0 0 0;
+  }
+}
 
 .pets-gallery-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 750px) {
+  .pets-gallery-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+}
 .pets-gallery-block__left-nav-item {
   margin: 0 53px 0 0;
 }
+@media (max-width: 1099.9px) {
+  .pets-gallery-block__left-nav-item {
+    margin: 0 12px 0 0;
+  }
+}
+@media (max-width: 750px) {
+  .pets-gallery-block__left-nav-item {
+    order: 1;
+  }
+}
 .pets-gallery-block__right-nav-item {
   margin: 0 0 0 53px;
+}
+@media (max-width: 1099.9px) {
+  .pets-gallery-block__right-nav-item {
+    margin: 0 0 0 12px;
+  }
+}
+@media (max-width: 750px) {
+  .pets-gallery-block__right-nav-item {
+    order: 2;
+  }
 }
 
 .pets-gallery {
@@ -845,6 +899,33 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 1099.9px) {
+  .pets-gallery {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 769px) {
+  .pets-gallery {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 750px) {
+  .pets-gallery {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 750px) {
+  .pet-card-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1099.9px) {
+  .pet-card-3 {
+    display: none;
+  }
 }
 
 .pet-card {
@@ -855,6 +936,11 @@ h5 {
   border-color: transparent;
   border-radius: 9px;
   overflow: hidden;
+}
+@media (max-width: 750px) {
+  .pet-card {
+    margin: 0 200px;
+  }
 }
 .pet-card:hover {
   border-color: #FDDCC4;
