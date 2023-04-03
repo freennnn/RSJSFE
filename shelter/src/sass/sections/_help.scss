@@ -39,7 +39,7 @@
         column-gap: normal;
         justify-content: space-between;
         >* {
-            flex-basis: 28%;
+            flex-basis: 27%;
         }
     }
     @include media-mobile-only {

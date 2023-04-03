@@ -870,13 +870,13 @@ h5 {
   text-align: center;
   color: #545454;
 }
-@media (max-width: 1099.9px) {
+@media (max-width: 650.9px) {
   .pets-content__title {
     margin: 0 auto 40px auto;
   }
 }
 .pets-content__to-pets-button {
-  margin: 58px 0 0 0;
+  margin: 60px 0 0 0;
   text-align: center;
 }
 @media (max-width: 750px) {
@@ -1054,7 +1054,7 @@ h5 {
     justify-content: space-between;
   }
   .help-list > * {
-    flex-basis: 28%;
+    flex-basis: 27%;
   }
 }
 @media (max-width: 650.9px) {
@@ -1129,24 +1129,69 @@ h5 {
 }
 
 .donations-content {
-  margin: 0px 182px 0px 183px;
   padding: 80px 0 100px 0px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 650.9px) {
+  .donations-content {
+    padding: 42px 0 42px 0;
+  }
+}
+@media (max-width: 1099.9px) {
+  .donations-content {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}
+@media (max-width: 650.9px) {
+  .donations-content {
+    row-gap: 42px;
+  }
 }
 
 .donations-content__pet-image {
-  object-fit: scale-down;
+  object-fit: cover;
+  max-width: 505px;
   width: 100%;
+}
+@media (max-width: 1099.9px) {
+  .donations-content__pet-image {
+    order: 1;
+  }
+}
+@media (max-width: 650.9px) {
+  .donations-content__pet-image {
+    max-width: 260px;
+  }
 }
 
 .donations-content__text-area {
   margin: 0 0 0 30px;
+  max-width: 380px;
+}
+@media (max-width: 1099.9px) {
+  .donations-content__text-area {
+    margin: 0 0 0 0;
+  }
+}
+@media (max-width: 650.9px) {
+  .donations-content__text-area {
+    max-width: 300px;
+  }
 }
 
 .donations-content__title {
   margin: 0 80px 20px 0;
   color: #545454;
+}
+@media (max-width: 650.9px) {
+  .donations-content__title {
+    text-align: center;
+    margin: 0 0px 20px 0;
+  }
 }
 
 .donations-content__subtitle {
@@ -1157,6 +1202,13 @@ h5 {
 .donations-content__card-promt {
   color: #545454;
 }
+@media (max-width: 650.9px) {
+  .donations-content__card-promt {
+    line-height: 160%;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
 
 .donations-content__description {
   margin: 0;
@@ -1165,6 +1217,12 @@ h5 {
   font-weight: 400;
   line-height: 1.8rem;
   color: #B2B2B2;
+}
+@media (max-width: 650.9px) {
+  .donations-content__description {
+    text-align: justify;
+    margin: 0 10px;
+  }
 }
 
 .credit-card-line {
@@ -1176,12 +1234,17 @@ h5 {
   border: 1px solid transparent;
   cursor: pointer;
 }
+@media (max-width: 650.9px) {
+  .credit-card-line {
+    margin: 20px 10px;
+  }
+}
 .credit-card-line:hover {
   box-shadow: 2px 2px 5px lightgray;
 }
 
 .credit-card-line__icon {
-  margin: 10px 15px;
+  margin: 9px 15px;
   display: block;
   width: 30px;
   height: 23px;
