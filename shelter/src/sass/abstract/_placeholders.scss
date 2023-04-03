@@ -42,6 +42,12 @@
     letter-spacing: 0.06em;
 }
 
+@mixin h4 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    @include font(2.0rem, normal, 400, 115%);
+    letter-spacing: 0.06em;
+}
+
 // mixin added to be able to use in @media queries (where placedolders don't work)
 @mixin h5 {
     @extend %font-primary;

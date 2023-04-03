@@ -1263,15 +1263,77 @@ h5 {
   padding: 40px 40px 0 40px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  align-items: start;
+  row-gap: 65px;
+}
+@media (max-width: 1099.9px) {
+  .contacts-content {
+    padding: 30px 30px 0 30px;
+  }
+}
+@media (max-width: 650.9px) {
+  .contacts-content {
+    padding: 30px 10px 0 10px;
+  }
+}
+@media (max-width: 1099.9px) {
+  .contacts-content {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 650.9px) {
+  .contacts-content {
+    justify-content: center;
+  }
+}
+@media (max-width: 650.9px) {
+  .contacts-content {
+    row-gap: 40px;
+  }
+}
+.contacts-content__pet-picture {
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 945px) {
+  .contacts-content__pet-picture {
+    margin: auto;
+  }
+}
+@media (max-width: 650.9px) {
+  .contacts-content__pet-picture {
+    max-width: 260px;
+  }
 }
 
 .digital-address {
   max-width: 280px;
 }
+@media (max-width: 1099.9px) {
+  .digital-address {
+    transform: translateX(-8px);
+  }
+}
+@media (max-width: 650.9px) {
+  .digital-address {
+    transform: none;
+  }
+}
 .digital-address__title {
   color: #FFFFFF;
   margin: 16px 0 38px 0;
+}
+@media (max-width: 1099.9px) {
+  .digital-address__title {
+    margin: 0 0 38px 0;
+  }
+}
+@media (max-width: 650.9px) {
+  .digital-address__title {
+    text-align: center;
+  }
 }
 .digital-address__email-row {
   display: flex;
@@ -1279,6 +1341,17 @@ h5 {
   border: solid 1px transparent;
   border-radius: 3px;
   cursor: pointer;
+}
+@media (max-width: 650.9px) {
+  .digital-address__email-row {
+    justify-content: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
 }
 .digital-address__email-row__icon {
   display: inline-block;
@@ -1289,6 +1362,16 @@ h5 {
 }
 .digital-address__email-row__email {
   color: #F1CDB3;
+}
+@media (max-width: 650.9px) {
+  .digital-address__email-row__email {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
 }
 .digital-address__email-row:hover {
   border: solid 1px rgba(253, 220, 196, 0.5019607843);
@@ -1301,6 +1384,11 @@ h5 {
   border-radius: 3px;
   cursor: pointer;
 }
+@media (max-width: 650.9px) {
+  .digital-address__phone-row {
+    justify-content: center;
+  }
+}
 .digital-address__phone-row__icon {
   display: inline-block;
   width: 40px;
@@ -1311,6 +1399,16 @@ h5 {
 .digital-address__phone-row__phone {
   color: #F1CDB3;
 }
+@media (max-width: 650.9px) {
+  .digital-address__phone-row__phone {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+}
 .digital-address__phone-row:hover {
   border: solid 1px rgba(253, 220, 196, 0.5019607843);
 }
@@ -1318,9 +1416,30 @@ h5 {
 .physical-address {
   max-width: 304px;
 }
+@media (max-width: 1099.9px) {
+  .physical-address {
+    transform: translateX(8px);
+  }
+}
+@media (max-width: 650.9px) {
+  .physical-address {
+    transform: none;
+  }
+}
 .physical-address__title {
   color: #FFFFFF;
   margin: 16px 31px 32px 0;
+}
+@media (max-width: 1099.9px) {
+  .physical-address__title {
+    margin: 0 31px 32px 1px;
+  }
+}
+@media (max-width: 650.9px) {
+  .physical-address__title {
+    text-align: center;
+    margin: 0 15px 40px 15px;
+  }
 }
 .physical-address__address-1-row {
   display: flex;
@@ -1340,6 +1459,16 @@ h5 {
 .physical-address__address-1-row__address {
   color: #F1CDB3;
 }
+@media (max-width: 650.9px) {
+  .physical-address__address-1-row__address {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+}
 .physical-address__address-1-row:hover {
   border: solid 1px rgba(253, 220, 196, 0.5019607843);
 }
@@ -1351,6 +1480,11 @@ h5 {
   border: solid 1px transparent;
   border-radius: 3px;
 }
+@media (max-width: 650.9px) {
+  .physical-address__address-2-row {
+    margin: 39px 0 0 0;
+  }
+}
 .physical-address__address-2-row__icon {
   display: inline-block;
   width: 22px;
@@ -1360,6 +1494,16 @@ h5 {
 }
 .physical-address__address-2-row__address {
   color: #F1CDB3;
+}
+@media (max-width: 650.9px) {
+  .physical-address__address-2-row__address {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
 }
 .physical-address__address-2-row:hover {
   border: solid 1px rgba(253, 220, 196, 0.5019607843);
