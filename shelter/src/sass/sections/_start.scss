@@ -1,29 +1,78 @@
 .start {
     background: url("../assets/images/shared/background_noise_transparent@2X.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-    //background: url("././assets/images/shared/background_noise_transparent@2X.png");
-    //background: url("../assets/images/start/start-screen-puppy.png");
-    //src/assets/images/start/start-screen-puppy.png
 }
 
 .start-content {
     padding: 0 40px;
+    @include media-tablet-and-down {
+        padding: 0 30px;
+    }
+    @include media-mobile-only {
+        padding: 0 10px;
+    }
+    
    // background-color: coral;
     display: flex;
     flex-wrap: nowrap;
     justify-content: end;
+    @include media-tablet-and-down {
+        flex-direction: column;
+    }
+    &__text-area {
+        margin: 163px 42px 0 0;
+        max-width: 460px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        @include media-tablet-and-down {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin: 0 150px 42px 0;
+        color: $color-light-xl;
+        @include media-mobile-only {
+            margin: 0 20px 42px 20px;
+            text-align: center;
+        }
+    }
+
+    &__subtitle {
+        margin: 0 0 42px 0;
+        @extend %paragraph-1;
+        color: $color-dark-s;
+        @include media-mobile-only {
+            text-align: center;
+        }
+    }
+
+    &__action-button {
+        align-self: flex-start;
+        @include media-tablet-and-down {
+            align-self: center;
+         }
+        @include media-mobile-only {
+        }
+    }
+
+    &__image {
+        max-width: 698px;
+        min-width: 20%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        @include media-tablet-and-down {
+            max-width: 569px;
+            margin: 100px 0 0 0;
+            align-self: flex-end;
+        }
+        @include media-mobile-only {
+            margin: 105px 0 0 0;
+            max-width: 260px;
+
+        }
+    }
 }
 
-.start-content__text-area {
-    margin: 163px 42px 0 0;
-}
 
-.start-content__title {
-    margin: 0 150px 42px 0;
-    color: $color-light-xl;
-}
-
-.start-content__subtitle {
-    margin: 0 0 42px 0;
-    @extend %paragraph-1;
-    color: $color-dark-s;
-}

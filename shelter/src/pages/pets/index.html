@@ -11,16 +11,14 @@
 <body>
     <header class="pets-page-start">
         <div class="content-wrapper start__wrapper">
-            <!-- Semantic requirement to have h1 -->
-            <h1 style="display: none">Shelter here to be!</h1>
             <div class="pure-header pure-header_light">
-                <div class="logo logo_petspage" onclick="window.location.href='../../../index.html'">
+                <div class="logo logo_pets-page" onclick="window.location.href='../../../index.html'">
                     <!-- <a href="#" class="logo">
                         <object type="image/svg+xml" data="./src/img/logo.svg" class="logo-object">
                             Your browser does not support SVG
                          </object>
                     </a> -->
-                    <p class="logo__title logo__title_light">Cozy House</p>
+                    <h1 class="logo__title logo__title_light">Cozy House</h1>
                     <p class="logo__sub-title logo__sub-title_light">Shelter for pets in Boston</p>
                 </div>
                 <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
@@ -39,8 +37,8 @@
         <section class="pets" id="pets">
             <div class="content-wrapper pets__wrapper">
                 <div class="pets-content">
-                    <h3 class="pets-content__title pets-content__title_petspage">Our friends who<br/>are looking for a house</h3>
-                    <div class="pets-gallery pets-gallery_petspage">
+                    <h3 class="pets-content__title pets-content__title_pets-page">Our friends who<br/>are looking for a house</h3>
+                    <div class="pets-gallery pets-gallery_pets-page">
   
                         <div class="pet-card">
                             <img class="pet-card__photo" src="../../assets/images/pets/pets/katrine.png" alt="Pet photo">
@@ -100,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pets-content__navigation_petspage">
+                    <div class="pets-content__navigation_pets-page">
                         <button class="navigation-button navigation-button_disabled">&lt;&lt;</button>
                         <button class="navigation-button navigation-button_disabled">&lt;</button>
                         <button class="navigation-button navigation-button_selected">1</button>
@@ -114,26 +112,26 @@
     <footer class="contacts" id="contacts">
         <div class="content-wrapper contacts__wrapper">
             <div class="contacts-content">
-                <div class="digital_address">
-                    <h3 class="digital_address__title">For questions and suggestions</h3>
-                    <div class="digital_address__email-row">
-                        <span class="digital_address__email-row__icon"></span>
-                        <h4 class="digital_address__email-row__email">email@shelter.com</h4>
+                <div class="digital-address">
+                    <h3 class="digital-address__title">For questions and suggestions</h3>
+                    <div class="digital-address__email-row">
+                        <span class="digital-address__email-row__icon"></span>
+                        <h4 class="digital-address__email-row__email" onclick="window.location.href='mailto:https://elonMask@tesla.com'">email@shelter.com</h4>
                     </div>
-                    <div class="digital_address__phone-row">
-                        <span class="digital_address__phone-row__icon"></span>
-                        <h4 class="digital_address__phone-row__phone">+13 674 567 75 54</h4>
+                    <div class="digital-address__phone-row" onclick="window.location.href='tel:+136745677554'">
+                        <span class="digital-address__phone-row__icon"></span>
+                        <h4 class="digital-address__phone-row__phone">+13 674 567 75 54</h4>
                     </div>
                 </div>
                 <div class="physical-address">
-                    <h3 class="physical_address__title">We are waiting for your visit</h3>
-                    <div class="physical_address__address-1-row">
-                        <span class="physical_address__address-1-row__icon"></span>
-                        <h4 class="physical_address__address-1-row__address">1 Central Street, Boston (entrance from the store)</h4>
+                    <h3 class="physical-address__title">We are waiting for your visit</h3>
+                    <div class="physical-address__address-1-row" onclick='window.open("https://www.google.com/maps/place/Tesla+HQ/@37.5892454,-122.422145,11z/", "_blank")'>
+                        <span class="physical-address__address-1-row__icon"></span>
+                        <h4 class="physical-address__address-1-row__address">1 Central Street, Boston (entrance from the store)</h4>
                     </div>
-                    <div class="physical_address__address-2-row">
-                        <span class="physical_address__address-2-row__icon"></span>
-                        <h4 class="physical_address__address-2-row__address">18 South Park, London</h4>
+                    <div class="physical-address__address-2-row" onclick='window.open("https://www.google.com/maps/place/Tesla+HQ/@37.5892454,-122.422145,11z/", "_blank")'>
+                        <span class="physical-address__address-2-row__icon"></span>
+                        <h4 class="physical-address__address-2-row__address">18 South Park, London</h4>
                     </div>
                 </div>
                 <img class="contact-content__pet-picture" src="../../assets/images/contacts/footer-puppy.png" alt="Image of a pet">

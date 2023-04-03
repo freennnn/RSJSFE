@@ -3,34 +3,75 @@
 }
 
 .donations-content {
-    margin: 0px 182px 0px 183px;
+    //margin: 0px 182px 0px 183px;
     padding: 80px 0 100px 0px;
+    @include media-mobile-only {
+        padding: 42px 0 42px 0;
+    }
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    @include media-tablet-and-down {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+    @include media-mobile-only {
+        row-gap: 42px;
+    }
+
 }
 
 .donations-content__pet-image {
-    object-fit: scale-down;
+    object-fit: cover;
+    max-width: 505px;
     width: 100%; 
+    @include media-tablet-and-down {
+        order: 1;
+    }
+    @include media-mobile-only {
+        max-width: 260px;
+    }
 }
 
 .donations-content__text-area {
+    //padding: 0 0 0 30px;
     margin: 0 0 0 30px;
+    @include media-tablet-and-down {
+        margin: 0 0 0 0;
+    }
+    max-width: 380px;
+    @include media-mobile-only {
+        max-width: 300px;
+    }
+
+
 }
 
 .donations-content__title {
     margin: 0 80px 20px 0;
     color: $color-dark-l;
+    @include media-mobile-only {
+        text-align: center;
+        margin: 0 0px 20px 0;
+
+    }
 }
 
 .donations-content__subtitle {
     margin: 0 0 42px 0;
     @extend %paragraph-1;
     color: $color-dark-s;
+
 }
 
 .donations-content__card-promt {
     color: $color-dark-l;
+    @include media-mobile-only {
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+    }
 }
 
 .donations-content__description {
@@ -38,18 +79,34 @@
     @extend %font-secondary;
     @include font(1.2rem, italic, 400, 1.8rem);
     color: $color-dark-m;
+    @include media-mobile-only {
+        text-align: justify;
+        margin: 0 10px;
+    }
 }
 
 .credit-card-line {
     margin: 20px 31px 20px 0;
+    @include media-mobile-only {
+        margin: 20px 10px;
+    }
     display: flex;
     border-radius: 9px;
     background-color: $color-primary;
     align-items: center;
+    border: 1px solid transparent;
+    @extend %transition;
+    cursor:pointer;
+    &:hover {
+        //border-color: blue;
+        box-shadow: 2px 2px 5px lightgray;
+        //border-color: $color-primary-light-transparent;
+    }
+
 }
 
 .credit-card-line__icon {
-    margin:10px 15px;
+    margin:9px 15px;
     display: block;
     width: 30px;
     height: 23px;

@@ -11,6 +11,7 @@
 @import "components/navigation";
 @import "components/header";
 @import "components/buttons";
+@import "components/hamburger";
 
 @import "sections/start";
 @import "sections/about";
@@ -20,4 +21,4 @@
 @import "sections/contacts";
 
 //pages
-@import "petspage/header";
+@import "petspage/pets-page";

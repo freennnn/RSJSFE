@@ -1,23 +1,82 @@
+$hover-border-width: 1px;
+
 .contacts {
     background: url(../assets/images/shared/background_noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 .contacts-content {
     padding: 40px 40px 0 40px;
+    @include media-tablet-and-down {
+        padding: 30px 30px 0 30px;;
+    }
+    @include media-mobile-only {
+        padding: 30px 10px 0 10px;
+    }
     display: flex;
-    column-gap: 158px;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    @include media-tablet-and-down {
+        justify-content: space-evenly;
+    }
+    @include media-mobile-only {
+        justify-content: center;
+    }
+    //column-gap: 158px;
+    flex-wrap: wrap;
+    align-items: start;
+    row-gap: 65px;
+    @include media-mobile-only {
+        row-gap: 40px;
+    }
+
+    &__pet-picture {
+        max-width: 300px;
+        width: 100%;
+        object-fit: cover;
+        @media (max-width: 945px) {
+            margin: auto;
+        }
+        @include media-mobile-only {
+            max-width: 260px;
+        }
+    }
 }
 
-.digital_address {
+.digital-address {
+    max-width: 280px;
+    @include media-tablet-and-down {
+        transform: translateX(-8px);
+    }
+    @include media-mobile-only {
+        transform: none;
+    }
+    // @include media-mobile-only {
+    //     >* {
+    //         text-align: center;
+    //     }
+    // }
     &__title {
         color: $color-light-xl;
-        margin: 16px 0 40px 0;
+        margin: 16px 0 38px 0;
+        @include media-tablet-and-down {
+            margin: 0 0 38px 0;
+        }
+        @include media-mobile-only {
+            text-align: center;
+        }
     }
     &__email-row {
         display: flex;
         align-items: center;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
         cursor:pointer;
+        @extend %transition;
+        @include media-mobile-only {
+            justify-content: center;
+            @include h4;
+
+        }
+
         &__icon {
             display: inline-block;
             width: 40px;
@@ -28,14 +87,28 @@
     
         &__email {
             color: $color-primary;
+            // all <h4> change the font size, but contacts suddenly don't!
+            @include media-mobile-only {
+                @include h4;    
+            }
+        }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
         }
     }
 
     &__phone-row {
-        margin: 40px 0 0 0;
+        margin: 38px 0 0 0;
         display: flex;
         align-items: center;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
         cursor:pointer;
+        @extend %transition;
+        @include media-mobile-only {
+            justify-content: center;
+        }
         &__icon {
             display: inline-block;
             width: 40px;
@@ -46,19 +119,46 @@
 
         &__phone {
             color: $color-primary;
+            @include media-mobile-only {
+                @include h4;    
+            }
+        }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
         }
     }
 }
 
-.physical_address {
+.physical-address {
+    max-width: 304px;
+    @include media-tablet-and-down {
+        transform: translateX(8px);
+    }
+    @include media-mobile-only {
+        transform: none;
+    }
     &__title {
         color: $color-light-xl;
-        margin: 16px 31px 34px 0;
+        margin: 16px 31px 32px 0;
+        @include media-tablet-and-down {
+            margin: 0 31px 32px 1px;
+        }
+        @include media-mobile-only {
+            text-align: center;
+            margin: 0 15px 40px 15px;
+        }
     }
     &__address-1-row {
         display: flex;
         align-items: center;
         cursor: pointer;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
+        @extend %transition;
+        // @include media-mobile-only {
+        //     justify-content: center;
+        // }
         &__icon {
             display: inline-block;
             min-width: 22px;
@@ -70,14 +170,30 @@
     
         &__address {
             color: $color-primary;
+            @include media-mobile-only {
+                @include h4;    
+            }
+        }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
         }
     }
 
     &__address-2-row {
-        margin: 37px 0 0 0;
+        @extend %transition;
+        margin: 31px 0 0 0;
+        @include media-mobile-only {
+            margin: 39px 0 0 0;
+        }
         display: flex;
         align-items: center;
         cursor:pointer;
+        border: solid $hover-border-width transparent;
+        border-radius: 3px;
+        // @include media-mobile-only {
+        //     justify-content: center;
+        // }
         &__icon {
             display: inline-block;
             width: 22px;
@@ -88,6 +204,19 @@
 
         &__address {
             color: $color-primary;
+            @include media-mobile-only {
+                @include h4;    
+            }
         }
+
+        &:hover {
+            border: solid $hover-border-width $color-primary-light-transparent;
+            &> * {
+                //transform: scale(1.025, 1.025);
+            }
+        }
+
+        
+
     }
 }

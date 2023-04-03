@@ -2,7 +2,13 @@
     background-color: $color-light-xl;
 }
 .help-content {
-    padding: 80px 40px 100px 40px;
+    padding: 79px 40px 100px 40px;
+    @include media-tablet-and-down {
+        padding: 79px 69px 100px 69px;
+    }
+    @include media-mobile-only {
+        padding: 42px 15px;
+    }
     // background-color: yellowgreen;
 
     &__title {
@@ -13,6 +19,12 @@
     }
     &__help-list {
         padding: 60px 87px 0px 87px;
+        @include media-tablet-and-down {
+            padding: 60px 0 0 0;
+        }
+        @include media-mobile-only {
+            padding: 42px 0 0 0;
+        }
     }
 }
 
@@ -23,6 +35,19 @@
     column-gap: 119px;
     row-gap: 55px;
     justify-content: center;
+    @include media-tablet-and-down {
+        column-gap: normal;
+        justify-content: space-between;
+        >* {
+            flex-basis: 27%;
+        }
+    }
+    @include media-mobile-only {
+        row-gap: 30px;
+        >* {
+            flex-basis: 45%;
+        }
+    }
 }
 
 .help-list__item {
@@ -34,6 +59,9 @@
 .help-list__item__title {
     text-align: center;
     margin: 30px 0 0 0;
+    @include media-mobile-only {
+        margin: 20px 0 0 0;
+    }
     color: $color-dark-l;
 }
 
@@ -43,6 +71,16 @@
     cursor: pointer;
     width: 60px ;
     height: 60px;
+    @include media-mobile-only {
+        width: 50px ;
+        height: 50px;
+        background-size: cover;
+        //object-fit: contain;
+    }
+    // width: 100%;
+    // object-fit: contain;
+    // height: auto;
+
     &_pet-food {
         background-image: url("../assets/images/icons/help/icon-pet-food.svg");
     }

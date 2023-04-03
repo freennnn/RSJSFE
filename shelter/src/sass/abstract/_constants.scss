@@ -9,6 +9,8 @@ $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
 $color-primary: #F1CDB3;
 $color-primary-light: #FDDCC4;
+$color-primary-transparent: #F1CDB380;
+$color-primary-light-transparent: #FDDCC480;
 
 
 //$color-primary: #FF9900;
@@ -18,5 +20,7 @@ $color-active-state:#FF7549;
 $color-background: #FFEEE1;
 
 
-$desktop-start-width: 1199.9px;
-$tablet-start-width: 599.9px;
+// $desktop-start-width: 1199.9px;
+$desktop-start-width: 1099.9px;
+$tablet-start-width: 650.9px;
+//$tablet-start-width: 599.9px;

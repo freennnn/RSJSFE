@@ -11,8 +11,6 @@
 <body>
     <header class="start">
         <div class="content-wrapper start__wrapper">
-            <!-- Semantic requirement to have h1 -->
-            <h1 style="display: none">Shelter here to be!</h1>
             <div class="pure-header">
                 <div class="logo">
                     <!-- <a href="#" class="logo">
@@ -20,7 +18,7 @@
                             Your browser does not support SVG
                          </object>
                     </a> -->
-                    <p class="logo__title">Cozy House</p>
+                    <h1 class="logo__title">Cozy House</h1>
                     <p class="logo__sub-title">Shelter for pets in Boston</p>
                 </div>
                 <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
@@ -37,9 +35,9 @@
                 <div class="start-content__text-area">
                     <h2 class="start-content__title">Not only people need a house</h2>
                     <p class="start-content__subtitle">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <button class="button button_primary" onclick="window.location.href='#pets'">Make a friend</button>
+                    <button class="button button_primary start-content__action-button" onclick="window.location.href='#pets'">Make a friend</button>
                 </div>
-                <img src="src/assets/images/start/start-screen-puppy.png" alt="Start puppy image">
+                <img src="src/assets/images/start/start-screen-puppy.png" class="start-content__image" alt="Start puppy image">
             </div>
         </div>
     </header>
@@ -60,32 +58,32 @@
             <div class="content-wrapper pets__wrapper">
                 <div class="pets-content">
                     <h3 class="pets-content__title">Our friends who<br/>are looking for a house</h3>
-                    <div class="pets-gallery">
-                        <div class="pets-gallery__left-nav-item">
-                            <button class="navigation-button">&larr;</button>
+                    <div class="pets-gallery-block">
+                        <button class="navigation-button pets-gallery-block__left-nav-item">&larr;</button>
+                        <div class="pets-gallery">
+                                <div class="pet-card pet-card-1">
+                                    <img class="pet-card__photo" src="src/assets/images/pets/pets/katrine.png" alt="Pet photo">
+                                    <p class="pet-card__title">Katrine</p>
+                                    <div class="pet-card__more-button">
+                                        <button class="button button_secondary">Learn more</button>
+                                    </div>
+                                </div>
+                                <div class="pet-card pet-card-2">
+                                    <img class="pet-card__photo" src="src/assets/images/pets/pets/jennifer.png" alt="Pet photo">
+                                    <p class="pet-card__title">Jennifer</p>
+                                    <div class="pet-card__more-button">
+                                        <button class="button button_secondary">Learn more</button>
+                                    </div>
+                                </div>
+                                <div class="pet-card pet-card-3">
+                                    <img class="pet-card__photo" src="src/assets/images/pets/pets/woody.png" alt="Pet photo">
+                                    <p class="pet-card__title">Woody</p>
+                                    <div class="pet-card__more-button">
+                                        <button class="button button_secondary">Learn more</button>
+                                    </div>
+                                </div>
                         </div>
-                        <div class="pet-card">
-                            <img class="pet-card__photo" src="src/assets/images/pets/pets/katrine.png" alt="Pet photo">
-                            <p class="pet-card__title">Katrine</p>
-                            <div class="pet-card__more-button">
-                                <button class="button button_secondary">Learn more</button>
-                            </div>
-                        </div>
-                        <div class="pet-card">
-                            <img class="pet-card__photo" src="src/assets/images/pets/pets/jennifer.png" alt="Pet photo">
-                            <p class="pet-card__title">Jennifer</p>
-                            <div class="pet-card__more-button">
-                                <button class="button button_secondary">Learn more</button>
-                            </div>
-                        </div>
-                        <div class="pet-card">
-                            <img class="pet-card__photo" src="src/assets/images/pets/pets/woody.png" alt="Pet photo">
-                            <p class="pet-card__title">Woody</p>
-                            <div class="pet-card__more-button">
-                                <button class="button button_secondary">Learn more</button>
-                            </div>
-                        </div>
-                        <button class="navigation-button navigation-button_right-arrow">&rarr;</button>
+                        <button class="navigation-button pets-gallery-block__right-nav-item">&rarr;</button>
                     </div>
                     <div class="pets-content__to-pets-button">
                         <button class="button button_primary" onclick="window.location.href='src/pages/pets/index.html'">Get to know the rest</button>
@@ -145,9 +143,9 @@
                 <div class="donations-content">
                     <img class="donations-content__pet-image" src="src/assets/images/donations/donation-dog.png" alt="Donations puppy image">
                     <div class="donations-content__text-area">
-                        <h3 class="donations-content__title">You can also make a donation</h3>
+                        <h3 class="donations-content__title">You can also <br>make a donation</h3>
                         <h5 class="donations-content__card-promt">Name of the bank / Type of bank account</h5>
-                        <div class="credit-card-line">
+                        <div class="credit-card-line" onclick="window.open('https://thumbs.dreamstime.com/b/dog-cat-bankers-holds-credit-card-fan-dollars-notebook-financial-chart-stand-hugging-white-background-170799923.jpg', '_blank')"">
                             <span class="credit-card-line__icon"></span>
                             <h4 class="credit-card-line__number">8380 2880 8028 8791 7435</h4>
                         </div>
@@ -160,29 +158,29 @@
     <footer class="contacts" id="contacts">
         <div class="content-wrapper contacts__wrapper">
             <div class="contacts-content">
-                <div class="digital_address">
-                    <h3 class="digital_address__title">For questions and suggestions</h3>
-                    <div class="digital_address__email-row" onclick="window.location.href='mailto:https://elonMask@tesla.com'">
-                        <span class="digital_address__email-row__icon"></span>
-                        <h4 class="digital_address__email-row__email">email@shelter.com</h4>
+                <div class="digital-address">
+                    <h3 class="digital-address__title">For questions and suggestions</h3>
+                    <div class="digital-address__email-row" onclick="window.location.href='mailto:https://elonMask@tesla.com'">
+                        <span class="digital-address__email-row__icon"></span>
+                        <h4 class="digital-address__email-row__email">email@shelter.com</h4>
                     </div>
-                    <div class="digital_address__phone-row" onclick="window.location.href='tel:+136745677554'">
-                        <span class="digital_address__phone-row__icon"></span>
-                        <h4 class="digital_address__phone-row__phone">+13 674 567 75 54</h4>
+                    <div class="digital-address__phone-row" onclick="window.location.href='tel:+136745677554'">
+                        <span class="digital-address__phone-row__icon"></span>
+                        <h4 class="digital-address__phone-row__phone">+13 674 567 75 54</h4>
                     </div>
                 </div>
                 <div class="physical-address">
-                    <h3 class="physical_address__title">We are waiting for your visit</h3>
-                    <div class="physical_address__address-1-row" onclick='window.location.href="https://www.google.com/maps/place/Tesla+HQ/@37.5892454,-122.422145,11z/"'>
-                        <span class="physical_address__address-1-row__icon"></span>
-                        <h4 class="physical_address__address-1-row__address">1 Central Street, Boston (entrance from the store)</h4>
+                    <h3 class="physical-address__title">We are waiting for your visit</h3>
+                    <div class="physical-address__address-1-row" onclick='window.open("https://www.google.com/maps/place/Tesla+HQ/@37.5892454,-122.422145,11z/", "_blank")'>
+                        <span class="physical-address__address-1-row__icon"></span>
+                        <h4 class="physical-address__address-1-row__address">1 Central Street, Boston (entrance from the store)</h4>
                     </div>
-                    <div class="physical_address__address-2-row" onclick='window.location.href="https://www.google.com/maps/place/Tesla+HQ/@37.5892454,-122.422145,11z/"'>
-                        <span class="physical_address__address-2-row__icon"></span>
-                        <h4 class="physical_address__address-2-row__address">18 South Park, London</h4>
+                    <div class="physical-address__address-2-row" onclick='window.open("https://www.google.com/maps/place/Tesla+HQ/@37.5892454,-122.422145,11z/", "_blank")'>
+                        <span class="physical-address__address-2-row__icon"></span>
+                        <h4 class="physical-address__address-2-row__address">18 South Park, London</h4>
                     </div>
                 </div>
-                <img class="contact-content__pet-picture" src="src/assets/images/contacts/footer-puppy.png" alt="Image of a pet">
+                <img class="contacts-content__pet-picture" src="src/assets/images/contacts/footer-puppy.png" alt="Image of a pet">
             </div>
         </div>
     </footer>
