@@ -45,7 +45,7 @@
     @include media-mobile-only {
         row-gap: 30px;
         >* {
-            flex-basis: 48%;
+            flex-basis: 45%;
         }
     }
 }

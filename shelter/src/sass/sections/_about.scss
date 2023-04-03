@@ -25,12 +25,18 @@
         order: 2;
         margin: 0;
     }
+    @include media-mobile-only {
+        max-width: 260px;
+    }
 }
 
 .about-content__text-area {
     margin: 14px 175px 14px 0;
     @include media-tablet-and_down {
         margin: 0 3px 80px 4px;
+    }
+    @include media-mobile-only {
+        margin: 0 15px 40px 15px;
     }
 
 }
@@ -40,6 +46,7 @@
     color: $color-dark-l;
     @include media-mobile-only {
         text-align: center;
+        margin: 0 0 0 0;
     }
 }
 
@@ -48,6 +55,7 @@
 
     @include media-mobile-only {
         margin: 25px 0px 22px 0;
+        text-align: justify;
     }
 
     color: $color-dark-xl;
@@ -59,5 +67,7 @@
     margin: 0;
     color: $color-dark-xl;
     @extend %paragraph-1;
-
+    @include media-mobile-only {
+       text-align: justify;
+    }
 }

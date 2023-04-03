@@ -55,6 +55,9 @@ $gallery-block-breakpoint-mobile-width: 750px;
         }
         @media (max-width: $gallery-block-breakpoint-mobile-width) {
             order: 1;
+            margin: 0;
+            transform: translateX(9px);
+
             //margin: 0 0px 0 50px;
         }
         @include media-mobile-only {
@@ -68,6 +71,8 @@ $gallery-block-breakpoint-mobile-width: 750px;
         }
         @media (max-width: $gallery-block-breakpoint-mobile-width) {
             order: 2;
+            margin: 0;
+            transform: translateX(-9px);
             //margin: 0 50px 0 0;
         }
     }
