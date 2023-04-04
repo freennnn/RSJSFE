@@ -84,6 +84,8 @@ $gallery-block-breakpoint-mobile-width: 750px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
+
     @include media-tablet-and-down {
         justify-content: space-evenly;
     }
@@ -125,7 +127,7 @@ $gallery-block-breakpoint-mobile-width: 750px;
     border-color: transparent;
     border-radius: 9px;
     overflow: hidden;
-
+    min-width: 272px;
     @media (max-width:$gallery-block-breakpoint-mobile-width) {
         margin: 0 200px;
     }
