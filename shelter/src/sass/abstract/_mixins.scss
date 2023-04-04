@@ -6,6 +6,12 @@
     @media (max-width: $tablet-start-width) { @content; }
 }
 
+@mixin hamburger-menu {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
 @mixin font($size, $style:normal, $weight, $line-height) {
     font-size: $size;
     font-style: $style;
