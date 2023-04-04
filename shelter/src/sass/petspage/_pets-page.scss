@@ -101,4 +101,19 @@
             display: none;
         }
     }
+    @include media-mobile-only {
+        :nth-child(n+4) {
+            display: none;
+        }
+    }
+
+
+}
+
+.pet-card {
+    &_pets-page {
+        @media(max-width: 750px) {
+            margin: 0;
+        }
+    }
 }
