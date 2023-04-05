@@ -35,6 +35,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: $color-primary;
+    background-color: $color-light-l;
     cursor:pointer;
     color: $color-dark-3xl;
     @extend %h4;
