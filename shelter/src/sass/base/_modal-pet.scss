@@ -1,0 +1,92 @@
+.modal__content {
+    //display: flex;
+}
+
+.pet-card-modal {
+    width: 900px;
+    height: 500px;
+    @include media-tablet-and-down {
+        width: 682px;
+        height: 402px;
+    }
+    @include media-mobile-only {
+        width: 240px;
+        height: 341px;
+    }
+}
+
+
+.pet-modal-content {
+    display: flex;
+}
+
+.pet-modal__photo {
+
+    @include media-tablet-and-down {
+        max-width: 350px;
+        max-height: 350px;
+        object-fit: cover;
+    }
+    @include media-mobile-only {
+        display: none;
+    }
+
+}
+
+.pet-modal__text-content {
+    padding: 50px 20px 0px 29px;
+    @include media-tablet-and-down {
+        padding: 11px 10px 9px;
+    }
+    @include media-mobile-only {
+        text-align: center;
+    }
+}
+
+.pet-modal__sub-title {
+    margin: 10px 0 40px 0;
+    @include media-mobile-only {
+        margin: 10px 0 20px 0;
+        text-align: center;
+
+    }
+}
+
+.pet-modal__description {
+    @include media-mobile-only {
+        @include font(1.3rem, normal, 400, 1.43rem);
+        text-align: justify;
+    }
+}
+
+.pet-modal__med-list {
+    text-align: left;
+    margin: 40px 0 0 0;
+    @include media-mobile-only {
+        margin: 24px 0 0 0;
+    }
+}
+
+.pet-modal__med-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 1em;
+  }
+  
+.pet-modal__med-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $color-primary; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.pet-modal__med-list-item {
+    @extend %font-primary;
+    @include font($size: 1.5rem, $line-height: 1.65rem, $weight: 400);
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+    @include media-mobile-only {
+        margin-bottom: 5px;
+    }
+}
