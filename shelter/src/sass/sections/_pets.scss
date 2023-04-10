@@ -35,7 +35,9 @@ $gallery-block-breakpoint-mobile-width: 750px;
     }
 }
 
-
+.pets-gallery-wrapper {
+    flex-grow: 1;
+}
 
 .pets-gallery-block {
     display: flex;
@@ -77,25 +79,34 @@ $gallery-block-breakpoint-mobile-width: 750px;
         }
     }
 }
-
+.pets-gallery-wrapper {
+    overflow: scroll;
+}
 
 .pets-gallery {
-    flex-grow:1;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-grow:1;
+    align-items: center;
+    //column-gap: 90px;
+    position: relative;
+    //left: -500px;
+
+
+    //overflow: hidden;
 
     @include media-tablet-and-down {
-        justify-content: space-evenly;
-    }
-    // Just for 768 design, 
-    @media (max-width:769px) {
-        justify-content: space-between;;
-    }
-    @media (max-width:$gallery-block-breakpoint-mobile-width) {
         justify-content: space-around;
     }
+    // // Just for 768 design, 
+    // @media (max-width:769px) {
+    //     justify-content: space-between;;
+    // }
+    // @media (max-width:$gallery-block-breakpoint-mobile-width) {
+    //     justify-content: space-around;
+    // }
     //column-gap: 90px;
     // position: relative;
     // left: -24px;
@@ -103,24 +114,9 @@ $gallery-block-breakpoint-mobile-width: 750px;
     
 }
 
-.pet-card-2 {
-    @media (max-width:$gallery-block-breakpoint-mobile-width) {
-        display: none;
-    }
-    // @include media-mobile-only {
-    //     display: none;
-    // }
-}
-
-.pet-card-3 {
-    @include media-tablet-and-down {
-        display: none;
-    }
-}
-
 .pet-card {
     cursor:pointer;
-    @extend %transition;
+    //@extend %transition;
     background-color: $color-light-s;
     border-width: 2px;
     border-style: solid;
@@ -128,9 +124,11 @@ $gallery-block-breakpoint-mobile-width: 750px;
     border-radius: 9px;
     overflow: hidden;
     min-width: 272px;
-    @media (max-width:$gallery-block-breakpoint-mobile-width) {
-        margin: 0 200px;
-    }
+    position: relative;
+    left: 0;
+
+        //transition: all 3s ease-out;
+    
 
     &:hover {
         border-color: $color-primary-light;

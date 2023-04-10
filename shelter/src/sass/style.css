@@ -316,7 +316,7 @@ template {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-.logo_pets-page, .physical-address__address-2-row, .physical-address__address-1-row, .digital-address__phone-row, .digital-address__email-row, .credit-card-line, .pet-card, .navigation-button, .button, .navigation__link a {
+.logo_pets-page, .physical-address__address-2-row, .physical-address__address-1-row, .digital-address__phone-row, .digital-address__email-row, .credit-card-line, .navigation-button, .button, .navigation__link a {
   transition: all 0.3s ease-out;
 }
 
@@ -1041,6 +1041,10 @@ h5 {
   }
 }
 
+.pets-gallery-wrapper {
+  flex-grow: 1;
+}
+
 .pets-gallery-block {
   display: flex;
   align-items: center;
@@ -1085,38 +1089,21 @@ h5 {
   }
 }
 
+.pets-gallery-wrapper {
+  overflow: scroll;
+}
+
 .pets-gallery {
-  flex-grow: 1;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
 }
 @media (max-width: 1099.9px) {
-  .pets-gallery {
-    justify-content: space-evenly;
-  }
-}
-@media (max-width: 769px) {
-  .pets-gallery {
-    justify-content: space-between;
-  }
-}
-@media (max-width: 750px) {
   .pets-gallery {
     justify-content: space-around;
-  }
-}
-
-@media (max-width: 750px) {
-  .pet-card-2 {
-    display: none;
-  }
-}
-
-@media (max-width: 1099.9px) {
-  .pet-card-3 {
-    display: none;
   }
 }
 
@@ -1129,11 +1116,8 @@ h5 {
   border-radius: 9px;
   overflow: hidden;
   min-width: 272px;
-}
-@media (max-width: 750px) {
-  .pet-card {
-    margin: 0 200px;
-  }
+  position: relative;
+  left: 0;
 }
 .pet-card:hover {
   border-color: #FDDCC4;

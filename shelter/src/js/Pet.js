@@ -1,4 +1,4 @@
-export class PetCard {
+export class Pet {
     constructor ({ id, name, img, type, breed, description, age, inoculations, diseases, parasites }) {
         this.id = id;
         this.name = name;
