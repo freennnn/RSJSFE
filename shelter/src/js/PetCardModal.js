@@ -1,9 +1,9 @@
 import { Modal } from './Modal';
-import { PetCard } from './PetCard';
+import { Pet } from './Pet';
 
 export class PetCardModal extends Modal {
-    constructor (classes, petCard) {
+    constructor (classes, pet) {
         super([...classes, 'pet-card-modal']);
-        self.petCard = petCard;
+        self.pet = pet;
     }
 }
