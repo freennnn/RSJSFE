@@ -13,10 +13,14 @@ module.exports = (env, options) => {
         mode: isProduction? 'production' : 'development',
         devtool: isProduction? 'source-map' : 'eval-source-map',
         watch: false, /*!isProduction,*/
-        entry: ['./src/index.js', './src/sass/style.scss'],
+        entry: {
+           pageOne: ['./src/index.js', './src/sass/style.scss'],
+           pageTwo: ['./src/pages/pets/index.js', './src/sass/style.scss'],
+        } ,
         output: {
             path: path.join(__dirname, '/dist'),
-            filename: "script.js",
+            //filename: "script.js",
+            filename: '[name].js'
         },
         module: {
             rules: [
@@ -76,6 +80,13 @@ module.exports = (env, options) => {
             new HtmlWebpackPlugin({
                 template: 'index.html',
                 favicon: './src/assets/images/favicon/favicon.ico',
+                chunks: ['pageOne'],
+            }),
+            new HtmlWebpackPlugin({
+                template: './src/pages/pets/index.html',
+                filename: './src/pages/pets/index.html',
+                favicon: './src/assets/images/favicon/favicon.ico',
+                chunks: ['pageTwo'],
             }),
             new MiniCssExtractPlugin({
                 filename: 'style.css',

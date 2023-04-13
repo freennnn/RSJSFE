@@ -1756,32 +1756,22 @@ h5 {
 }
 
 .pets-gallery_pets-page {
-  column-gap: 34px;
   row-gap: 31px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 @media (max-width: 1099.9px) {
   .pets-gallery_pets-page {
     margin: 0 62px;
-    column-gap: normal;
     row-gap: 29px;
     justify-content: space-between;
   }
 }
 @media (max-width: 650.9px) {
   .pets-gallery_pets-page {
+    flex-direction: column;
     justify-content: center;
     margin: 0;
-  }
-}
-@media (max-width: 1277px) {
-  .pets-gallery_pets-page :nth-child(n+7) {
-    display: none;
-  }
-}
-@media (max-width: 650.9px) {
-  .pets-gallery_pets-page :nth-child(n+4) {
-    display: none;
   }
 }
 

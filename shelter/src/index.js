@@ -325,12 +325,12 @@ function getNextPetCardElements() {
 }
 
 
-const renderPetCardElements = (pets) => {
-    let galleryBlock = document.querySelector(".pets-gallery");
-    galleryBlock.innerHTML = '';
+// const renderPetCardElements = (pets) => {
+//     let galleryBlock = document.querySelector(".pets-gallery");
+//     galleryBlock.innerHTML = '';
 
-    galleryBlock.append(...generatePetCardElements(pets));
-}
+//     galleryBlock.append(...generatePetCardElements(pets));
+// }
 
 const generatePetCards = (petsJSON) => {
     let pets = [];

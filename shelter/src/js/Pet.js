@@ -12,23 +12,24 @@ export class Pet {
         this.parasites = parasites;;
     }
 
-    generatePetCardElement() {
+    generatePetCardElement(imagePathAdjustment = "") {
         let template = '';
         let petCardDiv = document.createElement('div');
         petCardDiv.className = "pet-card";
         petCardDiv.setAttribute("data-id", this.id);
-
-        this.urlToImg && (template += `<img class="pet-card__photo" src="${this.urlToImg}" alt="Pet photo">`);
+        // console.log(imagePathAdjustment);
+        // console.log(imagePathAdjustment + this.urlToImg);
+        this.urlToImg && (template += `<img class="pet-card__photo" src="${imagePathAdjustment + this.urlToImg}" alt="Pet photo">`);
         this.name && (template += `<p class="pet-card__title">${this.name}</p>`);
 
         template += `<div class="pet-card__more-button"><button class="button button_secondary">Learn more</button></div>`
     
         petCardDiv.innerHTML = template;
-        console.log(petCardDiv);
+        //console.log(petCardDiv);
         return petCardDiv;
     }
 
-    generatePetCardModalContent() {
+    generatePetCardModalContent(imagePathAdjustment = "") {
 
         let petContentDiv = document.createElement('div');
         petContentDiv.className = "pet-modal-content";
@@ -36,7 +37,7 @@ export class Pet {
 
         let template = '';
         let urlToModalImg = this.urlToImg.replace('/pets/pets', '/pets/modal')
-        urlToModalImg && (template += `<img class="pet-modal__photo" src="${urlToModalImg}" alt="Pet photo">`);
+        urlToModalImg && (template += `<img class="pet-modal__photo" src="${imagePathAdjustment + urlToModalImg}" alt="Pet photo">`);
         
         template += `<div class="pet-modal__text-content">`;
         template += `<h3 class="pet-modal__title">${this.name}</h3>`;
