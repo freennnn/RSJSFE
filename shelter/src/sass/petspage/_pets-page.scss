@@ -107,37 +107,39 @@
 }
 
 .pets-gallery_pets-page {
-    column-gap: 34px;
+    //column-gap: 34px;
     row-gap: 31px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     @include media-tablet-and-down {
         margin: 0 62px;
-        column-gap: normal;
+        //column-gap: normal;
         row-gap: 29px;
         justify-content: space-between ;
     }
     @include media-mobile-only {
+        flex-direction: column;
         justify-content: center;
         margin: 0;
 
     }
 
-    @media (max-width: 1277px) {
-        :nth-child(even) {
-            //transform: translateX(-10px);
-        }
-        :nth-child(odd) {
-            //transform: translateX(10px);
-        }
-        :nth-child(n+7) {
-            display: none;
-        }
-    }
-    @include media-mobile-only {
-        :nth-child(n+4) {
-            display: none;
-        }
-    }
+    // @media (max-width: 1277px) {
+    //     :nth-child(even) {
+    //         //transform: translateX(-10px);
+    //     }
+    //     :nth-child(odd) {
+    //         //transform: translateX(10px);
+    //     }
+    //     :nth-child(n+7) {
+    //         display: none;
+    //     }
+    // }
+    // @include media-mobile-only {
+    //     :nth-child(n+4) {
+    //         display: none;
+    //     }
+    // }
 
 
 }
